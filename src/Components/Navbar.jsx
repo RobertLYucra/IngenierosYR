@@ -80,7 +80,7 @@ export  function Navbar() {
                   aria-haspopup="false"
                   tabIndex="0"
                   className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-red-600 focus:bg-red-50 focus:outline-none focus-visible:outline-none lg:px-8"
-                  href="/nosotros"
+                  href="/#/nosotros"
                 >
                   <span className="text-lg" >Nosotros</span>
                 </a>
@@ -92,7 +92,7 @@ export  function Navbar() {
                   aria-haspopup="false"
                   tabIndex="0"
                   className="flex items-center gap-2 py-4 text-red-600 transition-colors duration-300 hover:text-red-600 focus:bg-red-50 focus:outline-none focus-visible:outline-none lg:px-8"
-                  href="/Servicios"
+                  href="/#/Servicios"
                 >
                   <span className="text-lg" >Servicios</span>
                 </a>
@@ -104,7 +104,7 @@ export  function Navbar() {
                   aria-haspopup="false"
                   tabIndex="0"
                   className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-red-600 focus:bg-red-50 focus:outline-none focus-visible:outline-none lg:px-8"
-                  href="/experiencia"
+                  href="/#/experiencia"
                 >
                 <span className="text-lg" >Experiencia</span>
                 </a  >
@@ -115,7 +115,7 @@ export  function Navbar() {
                   aria-haspopup="false"
                   tabIndex="0"
                   className="flex items-center gap-2 py-4 transition-colors duration-300  hover:text-red-600 focus:bg-red-50 focus:outline-none focus-visible:outline-none lg:px-8"
-                  href="/nosotros"
+                  href="/#/nosotros"
                 >
                   <span className="bg-red-600 p-3 text-white border-2 text-lg  rounded-xl hover:bg-blue-600 hover:text-white">Contacto</span>
                 </a>
