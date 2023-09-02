@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
+.figure .imagen{
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+}
+
+
+.figure .imagen img{
+    padding: 25px;
+}
+.figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aside-det{
+    display: flex;
+}
+.figure .aside-det .lista{
+    max-width: 450px;
+    line-height: 30px;
+    margin-right: 20px;
+}
+
+@media screen and (max-width:1150px) {
+    .figure .aside-det .lista{
+        max-width: 449px;
+    }
+}
+
+@media screen and (max-width: 883px) {
+    .aside-det{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 745px) {
+    .figure{
+        flex-direction: column;
+    }
+    .figure .imagen{
+        max-width: 500px;
+
+    }
+}
+.figure .lista li ion-icon{
+    color: #3B82F6;
+    margin-right: 15px;
+}
+.figure .lista li{
+    display: flex;
+    align-items: center;
+    font-family: "Raleway",sans-serif;
+}
+.figure .lista .ver-mas{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.figure .lista .ver-mas a{
+    text-align: center;
+    margin-top: 15px;
+    padding: 8px 20px;
+    background: white;
+    border-radius: 10px;
+    border: 2px solid rgb(40, 40, 240);
+    color: rgb(40, 40, 240);
+    font-weight: bold;
+    transition: 0.5s ease;
+
+}
+
+.figure .lista .ver-mas a:hover{
+    background:rgb(40, 40, 240);
+    color: white;;
+
+}
