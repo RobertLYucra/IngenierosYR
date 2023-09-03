@@ -67,15 +67,15 @@
     padding: 8px 20px;
     background: white;
     border-radius: 10px;
-    border: 2px solid rgb(40, 40, 240);
-    color: rgb(40, 40, 240);
+    border: 2px solid #3B82F6;
+    color: #3B82F6;
     font-weight: bold;
     transition: 0.5s ease;
 
 }
 
 .figure .lista .ver-mas a:hover{
-    background:rgb(40, 40, 240);
+    background:#3B82F6;
     color: white;;
 
 }

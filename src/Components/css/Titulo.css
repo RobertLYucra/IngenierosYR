@@ -1,0 +1,31 @@
+  @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Raleway:wght@600&display=swap');
+
+  .titulo {
+      height: 180px;
+      width: 100%;
+      background-image: url('https://egringenieros.com.pe/wp-content/uploads/2020/07/banner-contacto2-scaled.jpg?id=530');
+      display: flex;
+      align-items: center;
+      transition: 0.5s ease;
+  }
+
+  .titulo h1 {
+      margin-left: 180px;
+      color: white;
+      font-size: 50px;
+      font-family: 'Kanit', sans-serif;
+      font-family: 'Raleway', sans-serif;
+      transition: 0.5s ease;
+
+  }
+
+  @media screen and (max-width: 597px) {
+      .titulo {
+          height: 150px;
+      }
+
+      .titulo h1 {
+          margin: auto;
+          font-size: 35px;
+      }
+  }
