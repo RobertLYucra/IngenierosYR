@@ -1,9 +1,9 @@
 import React from 'react'
 import './css/Titulo.css'
-const Titulo = () => {
+const Titulo = (props) => {
   return (
     <div className='titulo' >
-        <h1>Nosotros</h1>
+        <h1>{props.titulo}</h1>
     </div>
   )
 }

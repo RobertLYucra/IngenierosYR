@@ -3,10 +3,11 @@
   .titulo {
       height: 180px;
       width: 100%;
-      background-image: url('https://egringenieros.com.pe/wp-content/uploads/2020/07/banner-contacto2-scaled.jpg?id=530');
+      background-image: url('../../assets/Titulo.jpg');
       display: flex;
       align-items: center;
       transition: 0.5s ease;
+      background-attachment: fixed;
   }
 
   .titulo h1 {

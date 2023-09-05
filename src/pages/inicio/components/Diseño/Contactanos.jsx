@@ -26,6 +26,24 @@ const Div = styled.div`
     width: 100%;
     margin-top: 25px;
   }
+  @keyframes animation {
+    0%{
+      transform: rotate(-3deg)
+    }
+    25%{
+      transform: rotate(0deg)
+    }
+
+    50%{
+      transform: rotate(3deg)
+    }
+    75%{
+      transform: rotate(0deg)
+    }
+    100%{
+      transform: rotate(-3deg)
+    }
+  }
   .contactanos {
     margin-right: 0;
     width: 100%;
@@ -48,6 +66,8 @@ const Div = styled.div`
       color: white;
       font-weight: bolder;
       background-color: #0a0a0a;
+      transition: 0.5s ease;
+      animation: animation 1s linear infinite;
       &:hover {
         color: red;
       }

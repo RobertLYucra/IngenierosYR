@@ -9,7 +9,6 @@ import Construccion from './Construccion'
 const Diseño = (props) => {
   return (
     <Div className='max-w-screen-xl' >
-        
         <DiseñoDetails itemName={props.itemName}/>
         <Gestion itemName={props.itemName}/>
         <Supervision itemName={props.itemName}/>

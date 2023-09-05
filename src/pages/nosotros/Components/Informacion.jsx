@@ -17,6 +17,7 @@ export function Informacion() {
                     <p className="leading-8 text-slate-900  ">
                     Nuestra compañía YR INGENIEROS E.I.R.L. cuenta con profesionales altamente capacitados de amplia experiencia, tanto en ejecución como desarrollo de proyectos en el área de Ingeniería Estructural. Comprende el Análisis y Diseño en Concreto Armado, Acero, Albañilería Confinada y Muros de Ductilidad Limitada. Cada proyecto se entrega con sus respectivos planos y memoria de cálculo que consta del Análisis Estático, Análisis Dinámico y Diseño según las normas vigentes
                     </p>
+                    
                 </Div>
                 <figure className="flex-1">
                     <img

@@ -37,7 +37,8 @@ const Mision = () => {
 export default Mision
 
 const Figure = styled.figure`
-    width: 350px;
+   width: 350px;
+    height: 440px;
     margin: auto 25px;
     padding: 10px;
     border-radius: 10px;
@@ -57,6 +58,8 @@ const Figure = styled.figure`
     }
     .card-info{
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        height: 400px;
+
     }
     h1{
         text-align: center;

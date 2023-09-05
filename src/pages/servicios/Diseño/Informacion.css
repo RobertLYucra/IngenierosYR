@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
+.lista li ion-icon{
+    color: #3B82F6;
+    margin-right: 15px;
+}
+ .lista li{
+    display: flex;
+    align-items: center;
+    font-family: "Raleway",sans-serif;
+    color: black;
+}

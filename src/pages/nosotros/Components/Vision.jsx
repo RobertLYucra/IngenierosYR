@@ -1,6 +1,6 @@
 import React from 'react'
 import { styled } from 'styled-components'
-import Nosotros from '../Mision.jpg'
+import Nosotros from '../vision.jpeg'
 
 const Vision = () => {
     return (
@@ -18,8 +18,8 @@ const Vision = () => {
                     <header className="mb-4 flex gap-4">
 
                         <div>
-                            <h1 className="text-xl font-medium text-slate-700">
-                                MISIÓN
+                            <h1 className="text-xl font-medium text-orange-500">
+                                VISIÓN
                             </h1>
                         </div>
                     </header>
@@ -37,7 +37,8 @@ const Vision = () => {
 export default Vision
 
 const Figure = styled.figure`
-    width: 350px;
+   width: 350px;
+    height: 440px;
     margin: auto 25px;
     padding: 10px;
     border-radius: 10px;
@@ -57,11 +58,12 @@ const Figure = styled.figure`
     }
     .card-info{
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        height: 400px;
+
     }
     h1{
         text-align: center;
         font-size: 30px;
         margin-bottom: 15px;
-        color: #2271f0;
     }
 `

@@ -5,11 +5,12 @@ import Mision from "./Components/Mision"
 import "./Nosotros.css"
 import { styled } from "styled-components"
 import Valores from "./Components/Valores"
+import Vision from "./Components/Vision"
 
 export function Nosotros() {
   return (
     <>
-      <Titulo />
+      <Titulo titulo={'Nosotros'} />
       <div className="contenido bg-white">
         <div className=" mx-auto max-w-screen-xl pt-10 pb-5 ">
           <Informacion />
@@ -18,7 +19,7 @@ export function Nosotros() {
         <div>
         <Cards className=" cards mt-10 w-full flex items-center justify-center" >
           <Mision />
-          <Mision />
+          <Vision />
           <Valores />
         </Cards>
       </div>

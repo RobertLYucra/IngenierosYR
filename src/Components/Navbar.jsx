@@ -1,10 +1,15 @@
 import React, { useState } from "react"
 import Logo from '../assets/logo.png'
-import {styled} from 'styled-components'
+import { styled } from 'styled-components'
+import "./css/Navbar.css"
 
-export  function Navbar() {
+export function Navbar() {
   const [isToggleOpen, setIsToggleOpen] = useState(false)
+  const [activeItem, setActiveItem] = useState("Inicio");
 
+  const handleItemClick = (itemName) => {
+    setActiveItem(itemName);
+  };
   return (
     <>
       {/*<!-- Component: Basic Navbar --> */}
@@ -23,15 +28,14 @@ export  function Navbar() {
               className="flex items-center gap-2 whitespace-nowrap py-3 text-lg focus:outline-none lg:flex-1"
               href="#"
             >
-              <Img src={Logo}/>
+              <Img src={Logo} />
             </a>
             {/*      <!-- Mobile trigger --> */}
             <button
               className={`relative order-10 block h-10 w-10 self-center lg:hidden
-                ${
-                  isToggleOpen
-                    ? "visible opacity-100 [&_span:nth-child(1)]:w-6 [&_span:nth-child(1)]:translate-y-0 [&_span:nth-child(1)]:rotate-45 [&_span:nth-child(3)]:w-0 [&_span:nth-child(2)]:-rotate-45 "
-                    : ""
+                ${isToggleOpen
+                  ? "visible opacity-100 [&_span:nth-child(1)]:w-6 [&_span:nth-child(1)]:translate-y-0 [&_span:nth-child(1)]:rotate-45 [&_span:nth-child(3)]:w-0 [&_span:nth-child(2)]:-rotate-45 "
+                  : ""
                 }
               `}
               onClick={() => setIsToggleOpen(!isToggleOpen)}
@@ -57,18 +61,18 @@ export  function Navbar() {
             <ul
               role="menubar"
               aria-label="Select page"
-              className={`absolute top-0 left-0 z-[-1] h-[28.5rem] w-full justify-center overflow-hidden  overflow-y-auto overscroll-contain bg-white/90 px-8 pb-12 pt-24 font-medium transition-[opacity,visibility] duration-300 lg:visible lg:relative lg:top-0  lg:z-0 lg:flex lg:h-full lg:w-auto lg:items-stretch lg:overflow-visible lg:bg-white/0 lg:px-0 lg:py-0  lg:pt-0 lg:opacity-100 ${
-                isToggleOpen
+              className={`absolute top-0 left-0 z-[-1] h-[28.5rem] w-full justify-center overflow-hidden  overflow-y-auto overscroll-contain bg-white/90 px-8 pb-12 pt-24 font-medium transition-[opacity,visibility] duration-300 lg:visible lg:relative lg:top-0  lg:z-0 lg:flex lg:h-full lg:w-auto lg:items-stretch lg:overflow-visible lg:bg-white/0 lg:px-0 lg:py-0  lg:pt-0 lg:opacity-100 ${isToggleOpen
                   ? "visible opacity-100 backdrop-blur-sm"
                   : "invisible opacity-0"
-              }`}
+                }`}
             >
               <li role="none" className="flex items-stretch">
                 <a
                   role="menuitem"
                   aria-haspopup="false"
                   tabIndex="0"
-                  className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-red-600 focus:bg-red-50 focus:outline-none focus-visible:outline-none lg:px-8"
+                  onClick={() => handleItemClick('Inicio')}
+                  className={` ${activeItem === 'Inicio' ? "actives" : ""} flex items-center gap-2 py-4 transition-colors duration-300 hover:text-red-600 focus:bg-red-50 focus:outline-none focus-visible:outline-none lg:px-8`}
                   href="/"
                 >
                   <span className="text-lg" >Inicio</span>
@@ -79,34 +83,66 @@ export  function Navbar() {
                   role="menuitem"
                   aria-haspopup="false"
                   tabIndex="0"
-                  className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-red-600 focus:bg-red-50 focus:outline-none focus-visible:outline-none lg:px-8"
+                  onClick={() => handleItemClick('Nosotros')}
+                  className={` ${activeItem === 'Nosotros' ? "actives" : ""} flex items-center gap-2 py-4 transition-colors duration-300 hover:text-red-600 focus:bg-red-50 focus:outline-none focus-visible:outline-none lg:px-8`}
                   href="/#/nosotros"
                 >
                   <span className="text-lg" >Nosotros</span>
                 </a>
               </li>
-              <li role="none" className="flex items-stretch">
-                <a
-                  role="menuitem"
-                  aria-current="page"
-                  aria-haspopup="false"
-                  tabIndex="0"
-                  className="flex items-center gap-2 py-4 text-red-600 transition-colors duration-300 hover:text-red-600 focus:bg-red-50 focus:outline-none focus-visible:outline-none lg:px-8"
-                  href="/#/Servicios"
-                >
-                  <span className="text-lg" >Servicios</span>
-                </a>
+              <li role="none" className="flex items-center" >
+                <div className="">
+                  <div className="group inline-block relative">
+                    <button
+                      className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-red-600 focus:bg-red-50 focus:outline-none focus-visible:outline-none lg:px-8"
+                    >
+                      <span className="text-lg">Servicios</span>
+                      
+                    </button>
+                    <ul className="absolute hidden w-44 text-gray-700 pt-1 group-hover:block">
+                      <li className="">
+                        <a
+                          className="rounded-t bg-gray-200 hover:text-red-500  py-2 px-4 block "
+                          href="/#/servicios/diseño"
+                        >Diseño Estructural</a
+                        >
+                      </li>
+                      <li className="">
+                        <a
+                          className="bg-gray-200 hover:text-red-500 py-2 px-4 block whitespace-no-wrap"
+                          href="#"
+                        >Gestión</a
+                        >
+                      </li>
+                      <li className="">
+                        <a
+                          className="rounded-b bg-gray-200 hover:text-red-500  py-2 px-4 block whitespace-no-wrap"
+                          href="#"
+                        >Supervición</a
+                        >
+                      </li>
+                      <li className="">
+                        <a
+                          className="rounded-b bg-gray-200 hover:text-red-500  py-2 px-4 block whitespace-no-wrap"
+                          href="#"
+                        >Construcción</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </li>
-              
+
               <li role="none" className="flex items-stretch">
                 <a
                   role="menuitem"
                   aria-haspopup="false"
                   tabIndex="0"
-                  className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-red-600 focus:bg-red-50 focus:outline-none focus-visible:outline-none lg:px-8"
+                  onClick={() => handleItemClick('Experiencia')}
+                  className={`${activeItem === 'Experiencia' ? "actives" : ""} flex items-center gap-2 py-4 transition-colors duration-300 hover:text-red-600 focus:bg-red-50 focus:outline-none focus-visible:outline-none lg:px-8`}
                   href="/#/experiencia"
                 >
-                <span className="text-lg" >Experiencia</span>
+                  <span className="text-lg" >Experiencia</span>
                 </a  >
               </li>
               <li role="none" className="flex items-stretch">
@@ -114,8 +150,9 @@ export  function Navbar() {
                   role="menuitem"
                   aria-haspopup="false"
                   tabIndex="0"
+                  onClick={() => handleItemClick('Contacto')}
                   className="flex items-center gap-2 py-4 transition-colors duration-300  hover:text-red-600 focus:bg-red-50 focus:outline-none focus-visible:outline-none lg:px-8"
-                  href="/#/nosotros"
+                  href="/#/contacto"
                 >
                   <span className="bg-red-600 p-3 text-white border-2 text-lg  rounded-xl hover:bg-blue-600 hover:text-white">Contacto</span>
                 </a>
