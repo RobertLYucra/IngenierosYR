@@ -17,7 +17,7 @@ export function Informacion() {
                     </header>
                     <p className="leading-8 text-slate-900  ">
                     En YR INGENIEROS E.I.R.L., contamos con un equipo altamente capacitado y con una amplia experiencia en la ejecución y desarrollo de proyectos de Ingeniería Estructural. Nuestros servicios abarcan el análisis y diseño de estructuras de concreto armado, acero, albañilería confinada y muros de ductilidad limitada. Cada proyecto que emprendemos incluye la entrega de planos detallados y una memoria de cálculo que cumple con los estándares actuales. Esto significa que realizamos un análisis estático y dinámico, y diseñamos las estructuras de acuerdo con las normativas vigentes en la industria.</p>
-                    <button type="button" class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 mt-2">Ver más</button>
+                    <button type="button" className="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 mt-2">Ver más</button>
 
                 </Div>
                 <figure className="flex-1">

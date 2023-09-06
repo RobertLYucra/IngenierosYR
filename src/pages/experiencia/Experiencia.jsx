@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Titulo from '../../Components/Titulo'
 import Profesional from './Components/Profesional'
 import { Slider } from './Components/Slider'
 import {Cards} from './Components/Cards'
 
 const Experiencia = () => {
+ document.title = "Experiencia"
+
   return (
     <>
       <div>

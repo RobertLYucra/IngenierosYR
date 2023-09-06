@@ -6,6 +6,8 @@ import Informacion from './Informacion'
 import SilderVideo from './SilderVideo'
 
 const Diseño = () => {
+  document.title = "Diseño Estructural"
+
     return (
         <div >
             <Titulo titulo={"Diseño Estructural"} />

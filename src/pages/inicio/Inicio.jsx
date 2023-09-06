@@ -6,6 +6,9 @@ import { Informacion } from "./components/Informacion";
 import InfoContact from "./components/InfoContact";
 
 const Inicio = () => {
+
+  document.title = "Inicio - YR Ingenieros EIRL";
+
   return (
     <div className="">
       <div className="portada relative  ">

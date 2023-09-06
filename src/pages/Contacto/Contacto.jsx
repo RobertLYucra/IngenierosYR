@@ -2,6 +2,8 @@ import React from 'react'
 import Titulo from '../../Components/Titulo'
 
 const Contacto = () => {
+    document.title = "Contacto"
+
     return (
         <>
             <div>

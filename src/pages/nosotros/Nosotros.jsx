@@ -8,6 +8,8 @@ import Valores from "./Components/Valores"
 import Vision from "./Components/Vision"
 
 export function Nosotros() {
+  document.title = "Nosotros"
+
   return (
     <>
       <Titulo titulo={'Nosotros'} />
