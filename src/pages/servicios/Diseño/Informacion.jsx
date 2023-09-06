@@ -1,6 +1,7 @@
 import React from "react"
 import './Informacion.css'
 import { styled } from "styled-components"
+import image from './images/Foto1.jpg'
 
 export default function Informacion() {
     return (
@@ -11,7 +12,7 @@ export default function Informacion() {
                 
                 <figure className="flex-1">
                     <img
-                        src="https://diciing.com/images/2021/04/16/analisis-y-diseo-estructural-bogota.jpg"
+                        src={image}
                         alt="card image"
                         className="object-cover min-h-full aspect-auto"
                     />
@@ -33,7 +34,7 @@ export default function Informacion() {
                             />
                         </a>
                         <div>
-                        <H1 className=' text-start font-sans font-bold text-blue-700 mb-6' >NUESTROS DISEÑOS</H1>
+                        <H1 className=' text-start font-sans font-bold text-blue-700 mb-6' >SERVICIO DE DISEÑOS</H1>
                             <p className="text-sm text-slate-400"> By Sue, jun 3 2023</p>
                         </div>
                     </header>

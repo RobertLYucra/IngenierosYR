@@ -38,30 +38,7 @@ export  function Slider() {
                 className="w-full max-w-full max-h-full m-auto"
               />
             </li>
-            <li>
-              <img
-                src="https://Tailwindmix.b-cdn.net/image-02.jpg"
-                className="w-full max-w-full max-h-full m-auto"
-              />
-            </li>
-            <li>
-              <img
-                src="https://Tailwindmix.b-cdn.net/image-03.jpg"
-                className="w-full max-w-full max-h-full m-auto"
-              />
-            </li>
-            <li>
-              <img
-                src="https://Tailwindmix.b-cdn.net/image-04.jpg"
-                className="w-full max-w-full max-h-full m-auto"
-              />
-            </li>
-            <li>
-              <img
-                src="https://Tailwindmix.b-cdn.net/image-05.jpg"
-                className="w-full max-w-full max-h-full m-auto"
-              />
-            </li>
+            
           </ul>
         </div>
         {/*    <!-- Controls --> */}

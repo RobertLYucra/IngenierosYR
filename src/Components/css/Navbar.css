@@ -1,3 +1,12 @@
 .actives{
     color: red;
 }
+
+@media screen and (max-width: 1024px) {
+    .options{
+        transform: translateY(-110px) translateX(110px);
+    }
+    .options li{
+        
+    }
+}

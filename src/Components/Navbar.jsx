@@ -99,7 +99,7 @@ export function Navbar() {
                       <span className="text-lg">Servicios</span>
                       
                     </button>
-                    <ul className="absolute hidden w-44 text-gray-700 pt-1 group-hover:block">
+                    <ul className="options absolute hidden w-44 text-gray-700 pt-1 group-hover:block">
                       <li className="">
                         <a
                           className="rounded-t bg-gray-200 hover:text-red-500  py-2 px-4 block "

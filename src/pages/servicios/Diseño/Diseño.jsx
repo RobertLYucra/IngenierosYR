@@ -11,7 +11,7 @@ const Diseño = () => {
             <Titulo titulo={"Diseño Estructural"} />
             <div className='mx-auto max-w-screen-xl mt-4'>
                 <Informacion/>
-                <H1 className='ml-8 text-start font-sans font-bold text-blue-700 mb-6' >NUESTROS DISEÑOS</H1>
+                <H1 className='ml-8  mt-5 text-start font-sans font-bold text-blue-700 mb-6' >NUESTROS DISEÑOS</H1>
                 <SliderImagen/>
                 <SilderVideo/>
             </div>
