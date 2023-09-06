@@ -66,16 +66,16 @@ export function Navbar() {
                   : "invisible opacity-0"
                 }`}
             >
-              <li role="none" className="flex items-stretch">
+              <li role="none" className="flex items-stretch"> 
                 <a
                   role="menuitem"
                   aria-haspopup="false"
                   tabIndex="0"
                   onClick={() => handleItemClick('Inicio')}
-                  className={` ${activeItem === 'Inicio' ? "actives" : ""} flex items-center gap-2 py-4 transition-colors duration-300 hover:text-red-600 focus:bg-red-50 focus:outline-none focus-visible:outline-none lg:px-8`}
+                  className={` ${activeItem === 'Inicio' ? "actives" : " "  }   flex items-center gap-2 py-4 ${isToggleOpen?"w-full":" "} transition-colors duration-300 hover:text-red-600 focus:bg-red-50 focus:outline-none focus-visible:outline-none lg:px-8`}
                   href="/"
                 >
-                  <span className="text-lg" >Inicio</span>
+                  <span className={`text-lg ${isToggleOpen?"w-full":" "}`} >Inicio</span>
                 </a>
               </li>
               <li role="none" className="flex items-stretch">
@@ -87,16 +87,16 @@ export function Navbar() {
                   className={` ${activeItem === 'Nosotros' ? "actives" : ""} flex items-center gap-2 py-4 transition-colors duration-300 hover:text-red-600 focus:bg-red-50 focus:outline-none focus-visible:outline-none lg:px-8`}
                   href="/#/nosotros"
                 >
-                  <span className="text-lg" >Nosotros</span>
+                  <span className={`text-lg ${isToggleOpen?"w-full":" "}`}>Nosotros</span>
                 </a>
               </li>
               <li role="none" className="flex items-center" >
                 <div className="">
                   <div className="group inline-block relative">
                     <button
-                      className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-red-600 focus:bg-red-50 focus:outline-none focus-visible:outline-none lg:px-8"
+                      className={`flex items-center gap-2 py-4 transition-colors duration-300 hover:text-red-600 ${isToggleOpen?"w-full":" "}  focus:bg-red-50 focus:outline-none focus-visible:outline-none lg:px-8`}
                     >
-                      <span className="text-lg">Servicios</span>
+                      <span className={`text-lg ${isToggleOpen?"w-72 h-[auto]  flex items-center text-start":" "}`}>Servicios</span>
                       
                     </button>
                     <ul className="options absolute hidden w-44 text-gray-700 pt-1 group-hover:block">
@@ -139,10 +139,10 @@ export function Navbar() {
                   aria-haspopup="false"
                   tabIndex="0"
                   onClick={() => handleItemClick('Experiencia')}
-                  className={`${activeItem === 'Experiencia' ? "actives" : ""} flex items-center gap-2 py-4 transition-colors duration-300 hover:text-red-600 focus:bg-red-50 focus:outline-none focus-visible:outline-none lg:px-8`}
+                  className={`${activeItem === 'Experiencia' ? "actives" : ""} flex items-center gap-2 ${isToggleOpen?"w-full":" "} py-4 transition-colors duration-300 hover:text-red-600 focus:bg-red-50 focus:outline-none focus-visible:outline-none lg:px-8`}
                   href="/#/experiencia"
                 >
-                  <span className="text-lg" >Experiencia</span>
+                  <span className={`text-lg ${isToggleOpen?"w-full":" "}`} >Experiencia</span>
                 </a  >
               </li>
               <li role="none" className="flex items-stretch">
@@ -151,10 +151,10 @@ export function Navbar() {
                   aria-haspopup="false"
                   tabIndex="0"
                   onClick={() => handleItemClick('Contacto')}
-                  className="flex items-center gap-2 py-4 transition-colors duration-300  hover:text-red-600 focus:bg-red-50 focus:outline-none focus-visible:outline-none lg:px-8"
+                  className={`flex items-center gap-2 py-4 transition-colors duration-300  hover:text-red-600 ${isToggleOpen?"w-full":" "}  focus:bg-red-50 focus:outline-none focus-visible:outline-none lg:px-8`}
                   href="/#/contacto"
                 >
-                  <span className="bg-red-600 p-3 text-white border-2 text-lg  rounded-xl hover:bg-blue-600 hover:text-white">Contacto</span>
+                  <span className={`bg-red-600 p-3 text-white border-2 text-lg ${isToggleOpen?"w-full":" "} rounded-xl hover:bg-blue-600 hover:text-white`}>Contacto</span>
                 </a>
               </li>
             </ul>

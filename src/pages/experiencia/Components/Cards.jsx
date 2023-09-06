@@ -1,5 +1,6 @@
 import React from "react"
 import Icon from '../../../assets/icon.png'
+import est from './images/estructural.jpg'
 
 export  function Cards() {
   return (
@@ -9,7 +10,7 @@ export  function Cards() {
         {/*  <!-- Image --> */}
         <figure className="flex-1">
           <img
-            src="https://picsum.photos/id/118/800/600"
+            src={est}
             alt="card image"
             className="object-cover min-h-full aspect-auto"
           />

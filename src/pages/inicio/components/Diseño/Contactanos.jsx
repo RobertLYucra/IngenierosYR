@@ -67,8 +67,8 @@ const Div = styled.div`
       font-weight: bolder;
       background-color: #0a0a0a;
       transition: 0.5s ease;
-      animation: animation 1s linear infinite;
       &:hover {
+        animation: animation 1s linear infinite;
         color: red;
       }
     }

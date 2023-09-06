@@ -14,7 +14,7 @@ export default function Informacion() {
                     <img
                         src={image}
                         alt="card image"
-                        className="object-cover min-h-full aspect-auto"
+                        className="object-cover min-h-fit aspect-auto"
                     />
                 </figure>
                 {/*  <!-- Body--> */}

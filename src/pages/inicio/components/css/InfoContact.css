@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
+.contactos{
+    height: 432px;
+    background-image: url("../img/FondoContactos.jpg");
+    display: flex;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Raleway",sans-serif;
+    background-position: center;
+    text-align: center;
+}
+

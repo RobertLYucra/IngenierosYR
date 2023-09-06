@@ -21,6 +21,7 @@ import image20 from './images/Foto (20).jpg'
 import image21 from './images/Foto (21).jpg'
 
 
+
 export  const Array = [image   ,
     image2,
     image3,

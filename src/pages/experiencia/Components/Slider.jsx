@@ -1,6 +1,7 @@
 import React, { useEffect } from "react"
 import Glide from "@glidejs/glide"
 import { styled } from "styled-components"
+import {Array} from './Array'
 
 export  function Slider() {
   useEffect(() => {
@@ -32,12 +33,16 @@ export  function Slider() {
         {/*    <!-- Slides --> */}
         <div className="overflow-hidden" data-glide-el="track">
           <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0">
-            <li>
-              <img
-                src="https://Tailwindmix.b-cdn.net/image-01.jpg"
-                className="w-full max-w-full max-h-full m-auto"
-              />
-            </li>
+            {
+              Array.map((img,i)=>{
+                return(<Li key={i} >
+                  <img
+                    src={img}
+                    className="w-full"
+                  />
+                </Li>)
+              })
+            }
             
           </ul>
         </div>
@@ -106,4 +111,9 @@ text-decoration: underline;
   @media screen and (max-width:400px){
     font-size: 20px;
   }
+`
+
+
+const Li = styled.li`
+  max-height: 720px;
 `
